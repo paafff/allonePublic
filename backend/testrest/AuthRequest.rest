@@ -1,0 +1,32 @@
+//register user
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+  "username" : "danangr",
+  "email" : "danang050402@gmail.com",
+  "password" : "@paafff050402D",
+  "confPassword" : "@paafff050402D"
+}
+
+  # "confPassword" : "@paafff050402D"
+
+###
+//login user
+post http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "email" : "danang050402@gmail.com",
+  "password" : "@paafff050402D"
+}
+
+
+###
+//getme
+get http://localhost:5000/getme
+
+
+###
+//logout user
+delete http://localhost:5000/logout

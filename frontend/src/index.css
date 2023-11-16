@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: cabinetGrotesk;
+  src: url(./assets/fonts/CabinetGrotesk-Black.ttf);
+}
+@font-face {
+  font-family: inter;
+  src: url(./assets/fonts/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: lato;
+  src: url(./assets/fonts/Lato-Black.ttf);
+}
+@font-face {
+  font-family: playFairDisplay;
+  src: url(./assets/fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: montserrat;
+  src: url(./assets/fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: zcoolXiao;
+  src: url(./assets/fonts/ZCOOLXiaoWei-Regular.ttf);
+}

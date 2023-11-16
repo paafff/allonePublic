@@ -1,0 +1,63 @@
+###
+//login user
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{  
+    "email":"danang050402@gmail.com",
+    "password":"@paafff050402D"
+} 
+
+
+//login admin
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{  
+    "email":"userx@mail.com",
+    "password":"12345"
+} 
+
+//getallproduct
+###
+get http://localhost:5000/products
+
+
+//getproductbyUUID
+###
+get http://localhost:5000/product/bae1e034-aa6a-4901-9af6-22e6e83e2585
+
+
+//getpublicproducts
+###
+get http://localhost:5000/publicproducts/83c58288-009b-4769-a4cd-5e81011f5e36
+
+
+//create product
+###
+post http://localhost:5000/product/create
+Content-Type: application/json
+
+{
+"name" : "pppppppppppppp",
+"price" : 1111,
+"description" : "lalalalalalala"
+}
+
+
+//update product
+###
+patch http://localhost:5000/product/a69c1954-6b63-434d-869f-39cfded75278
+Content-Type: application/json
+
+{
+"name" : "ssssss",
+"price" : 1231231
+}
+
+
+//delete product
+###
+delete http://localhost:5000/product/29ee7356-3538-4ae3-a179-37e1aa7346e2
+

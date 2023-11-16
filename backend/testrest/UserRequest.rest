@@ -1,0 +1,35 @@
+
+# userRouter.get("/users", getAllUsers); //admin
+###
+get http://localhost:5000/users
+
+# userRouter.get("/user/:uuid", getUserById);
+###
+get http://localhost:5000/user/eae64d52-c22e-402d-a767-1f44a44bcf43
+
+# userRouter.patch("/userdata/:uuid", editUserData);
+###
+patch http://localhost:5000/user/4c322b64-86bd-4f44-8702-bf0929fc3aa1
+Content-Type: application/json
+
+{
+"username":"adminnnn",
+"email":"min@mail.com",
+"address" : "lalalal"
+}
+
+
+# userRouter.patch("/userpassword/:uuid", editUserPassword);
+###
+patch http://localhost:5000/userpassword/9a8df809-a6e6-4703-b9ca-f57b3fa73ec3
+Content-Type: application/json
+
+{
+"password" : "",
+"confPassword" : ""
+}
+
+
+# userRouter.delete("/user/:uuid", deleteUser);
+###
+delete http://localhost:5000/user/0ba4dd36-ce78-4fe9-9594-81b678863391

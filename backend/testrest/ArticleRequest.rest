@@ -1,0 +1,54 @@
+###
+//login user
+post http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "email" : "danang050402@gmail.com",
+  "password" : "@paafff050402D"
+}
+
+###
+//createArticle
+post http://localhost:5000/article/create
+Content-Type: application/json
+
+{
+
+  "title" : "asassasa",
+  "content" : "ini content asassasa",
+  "summary" : "ini summary asassasa"
+}
+
+
+###
+//updateArticle
+patch http://localhost:5000/articles/edit/satuupdt
+Content-Type: application/json
+
+{
+  "title" : "satub",
+  "content" : "ini content updateeeeee",
+  "summary" : "ini summary updateeeeee"
+}
+
+
+###
+//getArticleByTitle
+get http://localhost:5000/articles/saya
+
+
+###
+//getArticleByTitle
+get http://localhost:5000/articlesimg/saya
+
+
+
+###
+//getArticles
+get http://localhost:5000/articles
+
+
+###
+//getArticles
+get http://localhost:5000/userArticles
