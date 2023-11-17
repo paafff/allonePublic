@@ -17,7 +17,7 @@ export const getMe = createAsyncThunk(
       //disini adalah titik masalah jika tidak menggunakan &&, karena pada database untuk gambar yang bernilai null tetap akan diproses menjadi blob
       //dengan menggunakan && maka data image yang bernilai null tidak akan diproses dan tidak akan terjadi error
       //kemudian jika nilai null maka gambar akan otomatis berisi blankprofile
-      const response = await axios.get('https://api.allone.my.id/getme');
+      const response = await axios.get('http://localhost:5000/getme');
       if (response.data.profile && response.data.profile.data) {
         const buffer = response.data.profile.data;
         const blob = new Blob([new Uint8Array(buffer)], { type: 'image/png' });
@@ -43,7 +43,7 @@ export const getMe = createAsyncThunk(
 
 // Aksi untuk melakukan logout user
 export const logOut = createAsyncThunk('user/LogOut', async () => {
-  await axios.delete('https://api.allone.my.id/logout');
+  await axios.delete('http://localhost:5000/logout');
   alert('Sukses logout');
 });
 
